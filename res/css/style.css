@@ -1,27 +1,40 @@
 body {
 }
 
+header {
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: lightgray;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
 
 ul li {
   float: left;
 }
 
+ul li:last-child {
+    margin-left: auto;
+}
+
 ul li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
+  border-radius: 10px;
   text-decoration: none;
 }
 
 ul li a:hover {
+    background-color: aqua;
+    color: white;
 }
 
 a {
@@ -32,4 +45,19 @@ a {
 a:hover,
 a:active {
   color: blue;
+}
+
+a img {
+    border-radius: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
 }
