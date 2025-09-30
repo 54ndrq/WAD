@@ -20,7 +20,7 @@ ul li {
 }
 
 ul li:last-child {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 ul li a {
@@ -33,8 +33,8 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: aqua;
-    color: white;
+  background-color: aqua;
+  color: white;
 }
 
 a {
@@ -48,16 +48,65 @@ a:active {
 }
 
 a img {
-    border-radius: 5px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 20px 10px;
+  margin: 20px 40px;
+  border-radius: 10px;
+}
+
+.user-info-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.user-info-date {
+  display: flex;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+.user-post {
+  margin-bottom: 10px;
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.like-image {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
 }
