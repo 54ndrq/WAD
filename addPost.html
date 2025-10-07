@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/images/favicon.ico" />
+    <link rel="stylesheet" href="res/css/style.css" />
+    <title>Add Post</title>
+</head>
+
+<body>
+<header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="login.html">
+                <img
+                        src="res/images/login.png"
+                        alt="login"
+                        style="width: 42px; height: 42px"
+                />
+            </a>
+        </li>
+    </ul>
+</header>
+
+<div class="addPost-container">
+    <form id="addPostForm">
+        <div class="addpost-form-content">
+            <label for="postBody">Post body</label>
+            <textarea
+                    id="postBody"
+                    name="postBody"
+                    placeholder="textarea"
+                    required
+            ></textarea>
+        </div>
+
+        <div class="addpost-form-content">
+            <label for="postImage">Select file</label>
+            <div class="file-upload">
+                <input
+                        type="file"
+                        id="postImage"
+                        name="postImage"
+                        accept="image/*"
+                />
+                <label for="postImage" class="file-label">Choose File</label>
+                <span id="fileName">No file chosen</span>
+            </div>
+        </div>
+
+        <div class="addpost-form-content">
+            <button type="submit" class="create-post-button">Create post</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById("addPostForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        window.location.href = "index.html";
+    });
+</script>
+</body>
+</html>
