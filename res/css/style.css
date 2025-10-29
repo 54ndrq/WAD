@@ -57,10 +57,31 @@ footer {
 .flex-container {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
   padding: 30px 20px;
-  margin: 3% 20%;
+  margin: 1% 21%;
   border-radius: 10px;
+}
+
+#feed-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.post-content{
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 35px;
+}
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.user-info-name {
+    margin-left: 15px;
+    margin-right: 50px;
+    font-weight: bold;
 }
 
 .user-info-avatar {
@@ -70,9 +91,7 @@ footer {
 }
 
 .user-info-date {
-  display: flex;
-  float: right;
-  margin-bottom: 10px;
+    margin-left: auto;
 }
 
 .post-image {

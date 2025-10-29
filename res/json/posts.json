@@ -1,0 +1,72 @@
+[
+  {
+    "author": "Mqri_3",
+    "id": 1,
+    "title": "it´s fall already",
+    "imagePath": "res/images/tartu.jpg",
+    "createTime": "Sep 17, 2025"
+  },
+  {
+    "author": "Karl44",
+    "id": 2,
+    "title": "Tartu",
+    "imagePath": "res/images/tartu-udus.jpg",
+    "createTime": "Oct 22, 2025"
+  },
+  {
+    "author": "l11sa",
+    "id": 3,
+    "title": "Homework",
+    "imagePath": "res/images/post3.jpg",
+    "createTime": "Sep 18, 2025"
+  },
+  {
+    "author": "kr33te",
+    "id": 4,
+    "title": "partyy",
+    "imagePath": "res/images/post4.jpg",
+    "createTime": "Jun 19, 2025"
+  },
+  {
+    "author": "nature_pics99",
+    "id": 5,
+    "title": "At the beach",
+    "imagePath": "res/images/post5.jpg",
+    "createTime": "Oct 11, 2025"
+  },
+  {
+    "author": "1nn44o",
+    "id": 6,
+    "title": "Toomemäel",
+    "imagePath": "res/images/post6.jpg",
+    "createTime": "Sep 23, 2025"
+  },
+  {
+    "author": "paulerikson",
+    "id": 7,
+    "title": "View today",
+    "imagePath": "res/images/post7.jpg",
+    "createTime": "May 29, 2025"
+  },
+  {
+    "author": "matimägi",
+    "id": 8,
+    "title": "Found a cool bookstore",
+    "imagePath": "res/images/post8.jpg",
+    "createTime": "Aug 30, 2025"
+  },
+  {
+    "author": "r0bin",
+    "id": 9,
+    "title": "Kaarsild öösel",
+    "imagePath": "res/images/post9.jpg",
+    "createTime": "Dec 19, 2024"
+  },
+  {
+    "author": "Gr33t3",
+    "id": 10,
+    "title": "Pirogovis jälle",
+    "imagePath": "res/images/post10.jpg",
+    "createTime": "Sep 2, 2024"
+  }
+]
