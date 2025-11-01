@@ -1,6 +1,24 @@
 window.onload = function () {
 
 
+    const userMenu = document.querySelector(".user-menu"); // li around avatar
+    const toggleBtn = document.getElementById("user-toggle"); // the <a> around the img
+    const dropdown = document.querySelector(".dropdown"); // the dropdown div
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            userMenu.classList.toggle("open");
+        });
+
+        // close dropdown when clicking outside
+        document.addEventListener("click", function (e) {
+            if (!userMenu.contains(e.target)) {
+                userMenu.classList.remove("open");
+            }
+        });
+    }
+
     fetch("https://api.npoint.io/9b26ac3e584b23a71ecf")
         .then((response) => response.json())
         .then(json => {
