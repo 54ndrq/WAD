@@ -260,3 +260,36 @@ footer {
 .create-post-button:hover {
     background-color: #1a417f;
 }
+
+@media (max-width: 768px) {
+    .flex-container,
+    .login-container,
+    #addPostForm {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    .form-content input[type="email"],
+    .form-content input[type="password"],
+    .form-content input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .login-button {
+        margin-left: 0;
+        padding: 8px;
+    }
+
+    .post-content {
+        padding: 20px;
+    }
+
+    #welcome {
+        font-size: 1.1em;
+    }
+}
