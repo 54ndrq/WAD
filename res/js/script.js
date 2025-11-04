@@ -19,7 +19,8 @@ window.onload = function () {
         });
     }
 
-    fetch("https://api.npoint.io/9b26ac3e584b23a71ecf")
+    //fetch("https://api.npoint.io/9b26ac3e584b23a71ecf")
+    fetch('res/json/posts.json')
         .then((response) => response.json())
         .then(json => {
 
