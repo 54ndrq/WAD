@@ -32,24 +32,34 @@ window.onload = function () {
                 const postContent = document.createElement("div");
                 postContent.className = "post-content";
 
+                // User info
                 const userInfo = document.createElement("div");
                 userInfo.className = "user-info";
+
+                // Wrapper for avatar + username
+                const userInfoLeft = document.createElement("div");
+                userInfoLeft.className = "user-info-left";
+
                 const userAvatar = document.createElement("img");
                 userAvatar.src = "res/images/login.png";
                 userAvatar.alt = "user avatar";
                 userAvatar.className = "user-info-avatar";
+
                 const userName = document.createElement("p");
                 userName.textContent = post.author;
                 userName.className = "user-info-name";
-                userInfo.appendChild(userAvatar);
-                userInfo.appendChild(userName);
+                userInfoLeft.appendChild(userAvatar);
+                userInfoLeft.appendChild(userName);
 
+                //Date
                 const date = document.createElement("p");
                 date.className = "user-info-date";
                 date.textContent = post.createTime;
+                userInfo.appendChild(userInfoLeft);
                 userInfo.appendChild(date);
                 postContent.appendChild(userInfo);
 
+                //Post image
                 const userPost = document.createElement("div");
                 userPost.className = "user-post";
 
@@ -61,6 +71,7 @@ window.onload = function () {
                 userPost.appendChild(postedImage);
                 postContent.appendChild(userPost);
 
+                //Post description
                 const description = document.createElement("div");
                 description.className = "post-description";
                 const title = document.createElement("p");
@@ -69,6 +80,7 @@ window.onload = function () {
                 description.appendChild(title);
                 postContent.appendChild(description);
 
+                //Like button
                 const like = document.createElement("div");
                 like.className = "like";
                 const likeImg = document.createElement("img");
